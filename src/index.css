@@ -395,12 +395,12 @@ body {
     display: none;
   }
   .home{
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   /* Header */
   .header{
-    margin-left: 25px;
+    margin-left: 20px;
     margin-top: 0;
     margin-bottom: 10px;
     height: 120px;
@@ -413,7 +413,8 @@ body {
     display: none;
   }
   .section-btn{
-    margin-left: 0;
+    margin-top: 10px;
+    margin-left: 15px;
     width: 400px;
   }
   .sm{
@@ -423,13 +424,13 @@ body {
 
   /* Banner */
   .banner{
-    margin-left: -15px;
+    margin-left: -14px;
     width: 95vw;
     height: 200px;
   }
 
   .banner-box {
-    margin-top: 70px;
+    margin-top: 80px;
     width: 100%;
   }
 

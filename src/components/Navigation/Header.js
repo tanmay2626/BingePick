@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <Container fluid className="header">
-              <div className="logo sm">
+          <div className="logo sm">
             <h2>
               <span>Binge</span>Pick
             </h2>
