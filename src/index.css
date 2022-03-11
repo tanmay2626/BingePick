@@ -414,7 +414,7 @@ body {
   }
   .section-btn{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 25px;
     width: 400px;
   }
   .sm{
@@ -470,7 +470,7 @@ body {
     width: 100vw;
   }
   .movie-backdrop img{
-    width: 97vw;
+    width: 98vw;
     height: 250px;
   }
   .movie-poster img{
@@ -522,43 +522,31 @@ body {
 
   /* List */
   .list-title{
-    margin-left: 40px;
+    margin-left: 120px;
   }
   .list-main{
-    margin-top: 30px;
+    margin-top: 40px;
+    width: 100vw;
+    margin-left: 5px;
   }
   .list{
-    height: 340px;
-    width: 80vw;
-    margin-left: -20px;
-    margin-top: 35px;
+    height: 150px;
+    width: 90vw;
+    margin-left: -10px;
+    margin-top: 30px;
   }
   .list-img{
-    margin-top: 10px;
-    height: 200px;
+    height: 150px;
   }
-  .list-genre{
-    width: 160px;
-    margin-left: -30px;
-  }
-  .sml-list{
-    display: none;
-  }
-  .lgl-list{
-    display: flex;
+  .list-body{
+    height: 150px;
+    width: 100%;
   }
   .list-rating{
-    width: 120px;
-    margin-left: -25px;
-  }
-  .sml-1{
-    width: 55px;
+    margin-left: 15px;
   }
   .sml-info{
-    margin-top: -72px;
-    margin-left: 220px;
-    width: 60px;
-    height: 60px;
+    display: none;
   }
   .pages{
     width: 350px;

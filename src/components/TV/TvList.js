@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { IconButton } from "@mui/material";
 import { ConvDate } from "../../Extras/Conversions"
+import Grid from '@mui/material/Grid';
 
 const List = ({ tList, setShowID }) => {
   const [lists, setList] = useState([])
@@ -62,11 +63,11 @@ const List = ({ tList, setShowID }) => {
         const imgUrl = "https://image.tmdb.org/t/p/original" + item.poster_path;
         return (
           <Card component={Link} to="/movie" key={index} className="list">
-            <Row>
-              <Col sm={0} md={0} lg={2}>
-                <Card.Img className="list-img sml-list" variant="top" src={imgUrl} />
-              </Col>
-              <Col sm={12} md={12} lg={8}>
+          <Grid spacing={2} container className="list-row">
+              <Grid item xs={4} sm={4} md={2}>
+                <Card.Img className="list-img" variant="top" src={imgUrl} />
+              </Grid>
+              <Grid item xs={8} sm={8} md={9}>
                 <Card.Body className="list-body">
                   <Card.Title className="list-head">
                     {index + 1}. {item.original_name}
@@ -75,19 +76,34 @@ const List = ({ tList, setShowID }) => {
                   <div className="list-genre">
                     <p>{ConvDate(item.first_air_date)}</p>
                   </div>
-                  <Row className="list-rating">
-                    <Col className="sml-1" sm={1} md={1} lg={1}>
+                  <Grid container className="list-rating">
+                    <Grid className="sml-1" item xs={2} sm={2} md={6}>
                       <StarRateRoundedIcon
                         sx={{ color: "gold", fontSize: 35, marginLeft: -3 }}
                       />
-                    </Col>
-                    <Col className="list-rating-mid sml-1" sm={5} md={5} lg={5}>
+                    </Grid>
+                    <Grid  className="list-rating-mid sml-1" item xs={6} sm={6} md={6}>
                       <h5>{item.vote_average}</h5>
-                    </Col>
-                  </Row>
+                    </Grid>
+                    <Grid  className="list-rating-mid sml-1" item xs={3} sm={3} md={6}>
+                    <IconButton
+                  component={Link}
+                  to={"/tv/"+item.id}
+                  onClick={() => {
+                    setShowID(item.id);
+                  }}
+                >
+                  <InfoOutlinedIcon sx={{ fontSize: 35, marginTop: 0  , 
+                        '@media (max-width: 780px)' : {
+            fontSize : 30
+          }
+                  }} />
+                </IconButton>
+                    </Grid>
+                  </Grid>
                 </Card.Body>
-              </Col>
-              <Col className="sml-info" sm={2} md={2} lg={2}>
+              </Grid>
+              <Col className="sml-info" sm={0} md={0} lg={1}>
                 <IconButton
                   component={Link}
                   to={"/tv/"+item.id}
@@ -95,10 +111,11 @@ const List = ({ tList, setShowID }) => {
                     setShowID(item.id);
                   }}
                 >
-                  <InfoOutlinedIcon sx={{ fontSize: 35, marginTop: 0 }} />
+                  <InfoOutlinedIcon sx={{ fontSize: 35, marginTop: 0  , 
+                  }} />
                 </IconButton>
               </Col>
-            </Row>
+            </Grid>
           </Card>
         );
       })}

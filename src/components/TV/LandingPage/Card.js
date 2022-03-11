@@ -20,7 +20,7 @@ const Box = ({id,poster,setShowID}) => {
       component={Link} to={"/tv/"+id}
      sx={{  marginLeft : 18 , marginTop : -3 , borderRadius : 0 , height : 35 , width : 35 ,
       '@media (max-width: 780px)' : {
-            marginLeft : 11
+            marginLeft : 12
           }}} 
       >
       <InfoOutlinedIcon sx={{ color : 'white'}} />
