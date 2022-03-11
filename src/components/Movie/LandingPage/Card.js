@@ -20,7 +20,7 @@ const Box = ({id,poster,setMovieID}) => {
       component={Link} to={"/movie/"+id}
      sx={{  marginLeft : 18 , marginTop : -3 , borderRadius : 0 , height : 35 , width : 35 ,
       '@media (max-width: 780px)' : {
-            marginLeft : 11
+            marginLeft : 12
           }
      }} 
       >

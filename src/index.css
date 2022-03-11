@@ -440,14 +440,14 @@ body {
 
   /* Featured */
   .featured{
-    height: 255px;
+    height: 240px;
     width: 105vw;
     overflow: hidden;
     margin-left: -40px;
   }
 
   .featured-grid{
-    height: 255px;
+    height: 240px;
     width: 100vw;
     overflow: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -470,7 +470,7 @@ body {
     width: 100vw;
   }
   .movie-backdrop img{
-    width: 96vw;
+    width: 97vw;
     height: 250px;
   }
   .movie-poster img{
@@ -478,7 +478,7 @@ body {
   }
   .movie-poster{
     width: 180px;
-    margin-left: 85px;
+    margin-left: 95px;
     margin-top: -90px;
     height: 210px;
   }
@@ -517,7 +517,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-    margin-left: 35px;
+    margin-left: 40px;
   }
 
   /* List */
