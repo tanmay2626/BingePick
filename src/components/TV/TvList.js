@@ -85,7 +85,7 @@ const List = ({ tList, setShowID }) => {
                     <Grid  className="list-rating-mid sml-1" item xs={6} sm={6} md={6}>
                       <h5>{item.vote_average}</h5>
                     </Grid>
-                    <Grid  className="list-rating-mid sml-1" item xs={3} sm={3} md={6}>
+                    <Grid  className="list-rating-mid sml-1 lg-info" item xs={3} sm={3} md={6}>
                     <IconButton
                   component={Link}
                   to={"/tv/"+item.id}

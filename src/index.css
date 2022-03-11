@@ -238,6 +238,10 @@ body {
   font-size: 1rem;
 }
 
+.lg-info{
+  display: none;
+}
+
 .age {
   border-style: solid;
   height: 50px;
@@ -555,6 +559,9 @@ body {
   .pg-btn{
     margin-top: 10px;
     width: 80px;
+  }
+  .lg-info{
+    display: flex;
   }
   
   /* Footer */
