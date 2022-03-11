@@ -77,15 +77,15 @@ const List = ({ tList, setShowID }) => {
                     <p>{ConvDate(item.first_air_date)}</p>
                   </div>
                   <Grid container className="list-rating">
-                    <Grid className="sml-1" item xs={2} sm={2} md={6}>
+                    <Grid className="sml-1" item xs={2} sm={2} md={1}>
                       <StarRateRoundedIcon
                         sx={{ color: "gold", fontSize: 35, marginLeft: -3 }}
                       />
                     </Grid>
-                    <Grid  className="list-rating-mid sml-1" item xs={6} sm={6} md={6}>
+                    <Grid  className="list-rating-mid sml-1" item xs={6} sm={6} md={1}>
                       <h5>{item.vote_average}</h5>
                     </Grid>
-                    <Grid  className="list-rating-mid sml-1 lg-info" item xs={3} sm={3} md={6}>
+                    <Grid  className="list-rating-mid sml-1 lg-info" item xs={3} sm={3} md={10}>
                     <IconButton
                   component={Link}
                   to={"/tv/"+item.id}
