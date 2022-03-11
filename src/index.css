@@ -527,7 +527,7 @@ body {
   .list-main{
     margin-top: 40px;
     width: 100vw;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .list{
     height: 150px;
@@ -550,13 +550,12 @@ body {
   }
   .pages{
     width: 350px;
-    margin-left: -75px;
+    margin-left: -25px;
   }
   .pg-btn{
     margin-top: 10px;
     width: 80px;
   }
-
   
   /* Footer */
   .footer{
