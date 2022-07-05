@@ -1,7 +1,8 @@
 # BingePick
 
+This is React Web Application for discovering Movies and TV Shows with the help MovieDB API. It is designed using Material UI and hosted using Heroku!
+
 Link : https://nameless-lowlands-05721.herokuapp.com/
-Checkout your Favorite Movies and TV shows!!
 
 Movies Section (Desktop View):
 ![image](https://user-images.githubusercontent.com/87329832/157898611-7ec348a5-5082-471a-8e7a-66779b7b0fe6.png)
